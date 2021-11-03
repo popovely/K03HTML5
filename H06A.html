@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H06A.html</title>
+</head>
+<body>
+    <!-- 
+        _self : 현재 페이지에서 링크된 페이지를 연다.
+             - a태그를 통해 링크를 걸때 targer속성은 _self가 디폴트이므로
+               생략가능.
+
+        ./ 는 현재경로를 의미하므로 생략가능.
+            ;아래 2개의 링크는 완전히 동일하다.
+     -->
+    <h2>a 태그</h2>
+    <a href="H04DlDtDd.html" targer="_self">DL예제로 이동하기1</a>
+    <a href="./H04DlDtDd.html">DL예제로 이동하기2</a>
+    <br/>
+    <a href="http://naver.com" target="_blank">네이버로 이동하기</a>
+
+    <h2>네이버 상품 바로가기</h2>
+    <!-- _blank : 새 탭에서 링크된 페이지를 연다. -->
+    <a href="https://smartstore.naver.com/jungsu12/products/5965634808?NaPm=ct%3Dkvgbiow8%7Cci%3D8ea8c8c84f62e097dbfcf2b966c34f0bb6afabea%7Ctr%3Dsls%7Csn%3D4622823%7Chk%3Ddb2dbf9e609104c9cb1c84e990f8a19b98c381a0"
+        target="_blank">
+        부케가르니 로즈가든 바디워시
+    </a>
+
+
+    <h2>상대경로와 절대경로 알아보기</h2>
+    <!-- 
+        [링크를 걸때 경로 알아보기]
+
+        1. 절대경로(절대주소)
+         : 현재의 위치가 바뀌더라도 주소가 변하지 않는 절대적인 주소를 말한다.
+           주로 http:// 를 통해 외부링크를 걸거나,
+           /(홈디렉토리 ;root의 경로를 의미)로 시작하는 링크를 사용한다.
+        
+        2. 상대경로(상대주소)
+         : 현재  페이지의 위치에 따라 상대적으로 변하는 주소를 말한다.
+         ./      → 현재경로를 의미한다. 현재경로인 경우 생략가능.
+         ../     → 1단계 상위 디렉토리를 의미한다.
+         ../../  → 2단계 상위 디렉토리를 의미한다.
+     -->
+
+    <h3>상대경로로 링크 걸기</h3>
+    <ul><!-- 상대경로인 경우 ./ 부터 시작 -->
+        <li><a href="./SubFolder1/SubFile1.html">
+            서브파일1 바로가기</a></li>
+        <li><a href="./SubFolder1/SubFolder2/SubFile2.html">
+            서브파일2 바로가기</a></li>
+    </ul>
+
+    <h3>절대경로로 링크 걸기</h3>
+    <ul><!-- 절대경로인 경우 / 부터 시작 -->
+        <li><a href="/SubFolder1/SubFile1.html">
+            서브파일1 바로가기</a></li>
+        <li><a href="/SubFolder1/SubFolder2/SubFile2.html">
+            서브파일2 바로가기</a></li>
+    </ul>
+</body>
+</html>

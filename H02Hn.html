@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hn(Headline태그)</title>
+<!-- 
+    CSS (Cascading Style Sheets)
+     : HTML문서에 스타일을 적용하기 위해 사용한다.
+    
+    사용방법1] <style>태그를 <head>영역에 선언한 후 해당 속성을 작성한다.
+        방법2] 스타일을 적용할 태그에 style 속성으로 작성한다.
+ -->
+    <!-- 
+        아래의 스타일은 h1, h2, span 태그선택자를 통해
+        해당 문서의 태그를 선택하여 스타일을 설정한다.
+        
+         - border는 테두리의 스타일을 지정하는 속성으로
+           두께, 모양, 색깔을 조절할 수 있다.
+    -->
+    <style>
+        h1 { boreder:10px solid red; }
+        h2 { border:1px solid green; }
+        span { border:1px solid blue; }
+    </style>
+</head>
+<body>
+    <h1>블럭엘리먼트1</h1>
+
+    <span>span태그1</span>
+    <span>span태그2</span>
+    <span>span태그3</span>
+    <span>span태그1</span>
+    <span>span태그2</span>
+    <span>span태그3</span>
+
+    <h1>블럭엘리먼트2</h1>
+
+    <span>span태그1</span>
+    <span>span태그2</span>
+    <span>span태그3</span>
+
+    <hr />
+    <h1>제목1입니다.</h1>
+    <h2>제목2입니다.</h2>
+
+    <!-- 
+        dotted : 테두리를 점선으로 표시
+        double : 이중실선으로 표시
+     -->
+    <h3 style="border:1px dotted purple;">제목3입니다.</h3>
+    <!-- 
+        text-align : 텍스트를 정렬하는 속성
+     -->
+    <h4 style="text-align:right;">제목4입니다.</h4>
+    <h5 style="text-align:center;">제목5입니다.</h5>
+    <!-- 가로, 세로에 의해 박스모양과 같이 표현됨 -->
+    <h6 style="border:2px double black; width:500px; height:300px;
+    background:yellow;">제목6입니다.</h6>
+</body>
+</html>
