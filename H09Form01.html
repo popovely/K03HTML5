@@ -25,6 +25,18 @@
              : a 태그와 동일하게 폼값을 전송할 프레임의 위치를 선택할 수 있다.
      -->
     <h2>form태그로 데이터 전송하기</h2>
+    <!--🍀 
+        method="get"    => get방식
+         : 서버로부터 정보를 조회하기 위해 설계된 메소드.
+           필요한 데이터를 Body에 담지 않고,
+           url의 끝에 ?와 함께 이름과 값으로 쌍을 이루는
+           요청 파라미터인 쿼리스트링을 통해 전송한다.
+
+        method="post"   => post방식
+         : 리소스를 생성/변경하기 위해 설계된 메소드.
+           전송해야될 데이터를 HTTP 메세지의 Body에 담아서 전송.
+           대용량 데이터 전송가능.
+     -->
     <h3>GET 방식</h3>
     <!-- <form action="./form/request_form.html" method="get"> -->
     <form action="http://itempage3.auction.co.kr/DetailView.aspx" method="get">
